@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+article.control{
+    width: 1350px;
+    margin: auto;
+}
+article.control h1{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+
+}
+
+article.control label{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    text-transform: capitalize;
+
+
+}
+
+article.control select{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 20%;
+
+}
+
+
+article.control textarea{
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    padding:15px;
+    font-size: 25px;
+    resize: none;
+
+    
+}
+
+article.control button{
+    width: 10%;
+    height: 60px;
+    border: 2px solid #555;
+    font-size: 25px;
+    text-transform: capitalize;
+    border-radius: 20%;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    
+
+}

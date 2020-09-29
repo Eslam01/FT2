@@ -1,0 +1,521 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+
+
+body{
+    direction: rtl;
+    overflow-x: hidden;
+
+}
+
+
+/* start header */
+
+header{width: 1350px;margin: auto;}
+
+header .container{
+    width:100%;
+    background-color: #333;
+    height: 150px;
+    overflow: hidden;
+}
+
+header .logo{
+    width:20%;
+    height: 100%;
+    float: right;
+}
+
+header .logo h1{
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: center;
+    font-style: italic;
+    text-shadow:5px 5px  rgb(255, 255, 255) ;
+    margin-top: 25px;
+    
+}
+header .logo h1 span{
+
+    color: #fff;
+    text-shadow:5px 5px  rgb(0, 0, 0) ;
+}
+
+header .container nav {
+
+    width: 80%;
+    height: 100%;
+    float: left;
+    display: none;
+}
+
+header .container nav ul{
+    
+    list-style: none;
+    margin-top: 60px;
+    margin-right:70px;
+    word-spacing: 5em;
+}
+
+header .container nav ul:hover{
+    cursor:context-menu ;
+}
+
+header .container nav ul li{
+    
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    color: yellow;
+}
+
+header .container nav ul li:hover{
+    
+    color: violet;
+    cursor: pointer;
+}
+
+/* end header */
+/* start section */
+
+.content{
+    width: 1350px;
+    overflow: hidden;
+    margin: auto;
+
+}
+
+section{
+    width: 80%;
+    height: 1005px;
+    float: right;
+    background-color: white;
+    padding: 50px 50px 0 0;
+
+}
+
+section > div{
+    margin-bottom: 200px;
+    width:35%;
+    background-color: yellow;
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    overflow: hidden; 
+    transition: width ease-in-out .5s, height ease-in-out .5s .5s , margin-bottom ease-in-out .5s .5s;
+    
+}
+
+
+section > div:hover{
+    width: 98%;
+    height: 230px;
+    margin-bottom: 10px;
+
+}
+
+
+section > div h2{
+text-transform: capitalize;
+font-size: 28px;
+font-weight: bold;
+text-align: center;
+}
+
+section > div p{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    width: 79%;
+    float: left;
+    text-align: justify;
+}
+
+
+
+section > div hr{
+    width: 100%;
+  border :0.25px solid #888;
+  margin: 5px 0;
+  visibility: hidden;
+
+}
+
+section > div:hover hr{
+    visibility: visible;
+}
+
+section > div img{
+
+    width: 20%;
+    height: 75%;
+    float: right;
+    margin-top: 10px;
+
+}
+
+/* end section */
+/* start aside */
+
+aside{
+    
+    float: left;
+    width: 20%;
+    height:1005px ;
+    background-color:#ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+aside > div{
+
+        width: 90%;
+        height: 110px;
+        background-color: rgb(27, 163, 15);
+        padding: 10px;
+}
+
+aside > div > h3{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+
+aside > div > p{
+    font-size: 22px;
+    
+}
+
+aside > div > p > ul{
+
+    list-style-position: outside;
+    list-style-type: square;
+
+}
+
+/* end aside */
+/* start footer */
+
+footer{
+    clear: both;
+    background-color:#222;
+    width: 1350px;
+    margin: auto;
+
+}
+
+footer h1{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: yellowgreen;
+    margin-bottom: 10px;
+
+}
+
+footer .copyright{
+
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    direction: ltr;
+}
+
+/*end footer*/
+/*start article*/
+
+article.control{
+    width: 1350px;
+    margin: auto;
+}
+article.control h1{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+
+}
+
+article.control label{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    text-transform: capitalize;
+
+
+}
+
+article.control select{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 20%;
+
+}
+
+
+article.control textarea{
+    width: 80%;
+    height: 300px;
+    margin: 0 10%;
+    padding:15px;
+    font-size: 25px;
+    resize: none;
+
+    
+}
+
+article.control button{
+    width: 10%;
+    height: 60px;
+    border: 2px solid #555;
+    font-size: 25px;
+    text-transform: capitalize;
+    border-radius: 20%;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+}
+
+@media (max-width: 400px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+header{
+
+    width: 350px;
+    margin: auto;
+}
+
+header .container{
+    width: 100%;
+}
+
+header .logo{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content{
+    width: 350px;
+}
+
+section{
+    width: 100%;
+    padding: 20px;
+
+}
+section > div{
+
+    width: 95%;
+    margin-bottom: 370px;
+    
+}
+
+section > div:hover{
+    width: 95%;
+    height: 400px;
+    margin-bottom:10px;
+}
+
+section > div > img{
+    width: 100%;
+    height: 40%;
+
+}
+
+section > div > p{
+    width: 100%;
+}
+
+
+aside{
+    width: 100%;
+}
+
+aside > div{
+    margin: auto;
+}
+ aside > div > p{
+
+    text-align: center;
+    padding-top: 10px;
+
+ }
+
+ footer{
+     width: 350px;
+
+ }
+
+ 
+
+ footer > h1{
+     width: 100%;
+     
+ }
+
+}
+
+@media ( max-width:500px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+header{
+
+    width: 500px;
+    margin: auto;
+}
+
+header .container{
+    width: 100%;
+}
+
+header .logo{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content{
+    width: 500px;
+}
+
+section{
+    width: 100%;
+    padding: 20px;
+
+}
+section > div{
+
+    width: 95%;
+    margin-bottom: 370px;
+    
+}
+
+section > div:hover{
+    width: 95%;
+    height: 400px;
+    margin-bottom:10px;
+}
+
+section > div > img{
+    width: 100%;
+    height: 40%;
+
+}
+
+section > div > p{
+    width: 100%;
+}
+
+
+aside{
+    width: 100%;
+}
+
+aside > div{
+    margin: auto;
+}
+ aside > div > p{
+
+    text-align: center;
+    padding-top: 10px;
+
+ }
+
+ footer{
+     width: 500px;
+
+ }
+
+ 
+
+ footer > h1{
+     width: 100%;
+     
+ }
+
+
+
+}
+
+@media (max-width:1000px) and (min-width:500px){
+
+header {
+    max-width: 1000px;
+    min-width: 500px;
+
+}
+
+header .container{
+    width: 100%;
+}
+header .logo{
+    width: 100%;
+    margin: auto;
+}
+
+section{
+    max-width:1000px;
+
+}
+
+section > div{
+    width: 95%;
+    margin-bottom: 370px;
+}
+
+section > div:hover{
+    width: 95%;
+    height: 400px;
+}
+
+section > div > img{
+    width: 100%;
+    height: 40%;
+
+}
+
+section > div > p{
+    width: 100%;
+}
+
+aside{
+   float: right;
+    width: 100%;
+}
+
+aside > div{
+    margin: auto;
+}
+ aside > div > p{
+
+    text-align: center;
+    padding-top: 10px;
+
+ }
+
+
+
+
+}
+
